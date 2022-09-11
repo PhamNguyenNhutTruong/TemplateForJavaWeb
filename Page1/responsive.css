@@ -1,0 +1,172 @@
+    @media (min-width: 740px) and (max-width: 1023px) {
+    .grid {
+        width: 760px;
+    }
+
+    .grid__column {
+        width: 50%;
+    }
+    .header__navbar-item-search-input input {
+        width: 200px;
+    }
+
+    .header__navbar-item {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .slide_content img {
+        height: 260px;
+        width: 100%;
+    }
+
+    .category__heading {
+        font-size: 1.6rem;
+    }
+    
+    .shirt_catalog-title {
+        font-size: 1.9rem;
+    }
+
+    .type_of_product,
+    .option_filter-label,
+    .option_filter-name {
+        font-size: 1.6rem;
+    }
+
+    .home-product-item__name {
+        font-size: 1.2rem;
+        /* Xử lí tên quá dài */
+        line-height: 1.2rem;
+        max-height: 1.2rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+
+    .shop_name {
+        font-size: 1.4rem;
+    }
+
+    .category-item__link {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 739px){
+    .grid {
+        width: 400px;
+    }
+
+    .grid__column {
+        width: 50%;
+    }
+
+    .grid__column {
+        padding-left: 0;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .category {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 220px;
+        max-width: 100%;
+        background-color: #fff;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform linear 0.3s, opacity ease 0.5s;
+        z-index: 1;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+    
+    .header__navbar-item-search-input input {
+        width: 260px;
+    }
+
+    .grid__column_3 {
+        width: 100%;
+    }
+
+    .grid__column-3-3 {
+        width: 50%;
+    }
+
+    .header__navbar-item {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .slide_content img {
+        height: 160px;
+        width: 100%;
+    }
+
+    .next_page ion-icon {
+        margin: 10px 15px 5px 15px;
+        font-size: 0.6rem;
+    }
+
+    .category__heading {
+        font-size: 1.6rem;
+    }
+
+    .shirt_catalog-title {
+        font-size: 1.4rem;
+    }
+
+    .type_of_product,
+    .option_filter-label,
+    .option_filter-name {
+        font-size: 1.3rem;
+    }
+
+    .type_of_product {
+        padding: 12px 16px 12px 2px;
+    }
+
+    .home-product-item__name {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        max-height: 1.2rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .shop_name {
+        font-size: 1.4rem;
+    }
+
+    .category-item__link {
+        font-size: 1.3rem;
+    }
+
+    .footer_title {
+        font-size: 0.9rem;
+    }
+
+    .footer_content,
+    .footer_phonenumber,
+    .footer_email {
+        font-size: 0.7rem;
+    }
+
+    .footer_content b,
+    .footer_phonenumber b,
+    .footer_email b{
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+}

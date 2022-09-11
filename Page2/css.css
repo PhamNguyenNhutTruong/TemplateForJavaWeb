@@ -111,6 +111,9 @@ html {
     background-color: #f8f8f8;
     border-radius: 2px;
 }
+.btn_close {
+    display: none;
+}
 
 .category__heading {
     font-size: 1.8rem;
@@ -212,6 +215,13 @@ html {
 .home-product-item__name {
     font-size: 1.5rem;
     margin-top: 8px;
+    /* Xử lí tên quá dài */
+    line-height: 1.5rem;
+    max-height: 1.5rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 .shop_name {
@@ -292,4 +302,35 @@ html {
 .footer_email b{
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+/* Dùng để làm resposive */
+.nav__overplay {
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: fadeIn linear 0.3s;
+    display: none;
+}
+
+.nav__bar-btn {
+    font-size: 2.2rem;
+    padding: 8px;
+    display: none;
+}
+
+.nav__input {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

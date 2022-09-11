@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Page2</title>
 </head>
 
@@ -17,9 +19,14 @@
     <div class="grid">
         <div class="header">
             <ul class="header__navbar">
-                <li class="header__navbar-item">SHOPLANE</li>
-                <li class="header__navbar-item">ÁO</li>
-                <li class="header__navbar-item">QUẦN</li>
+                <li class="header__navbar-item hide">SHOPLANE</li>
+                <li class="header__navbar-item hide">ÁO</li>
+                <li class="header__navbar-item hide">QUẦN</li>
+
+                <label for="nav-mobile-input" class="nav__bar-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                
                 <li class="header__navbar-item">
                     <div class="header__navbar-item-search">
                         <div class="header__navbar-item-search-icon">
@@ -33,18 +40,24 @@
                 <li class="header__navbar-item">
                     <ion-icon name="cart"></ion-icon>
                 </li>
-                <li class="header__navbar-item">
+                <li class="header__navbar-item  hide">
                     <ion-icon name="person-circle-outline"></ion-icon>
                 </li>
             </ul>
         </div>
+        
         <!-- Content -->
         <div class="grid__row">
             <div class="grid__column">
-                <nav class="category">
+                <input type="checkbox" name="" id="nav-mobile-input" class="nav__input">
+                <label for="nav-mobile-input" class="nav__overplay"></label>
+                <label for="nav-mobile-input" class="category">
                     <h3 class="category__heading">
                         Danh Mục
                     </h3>
+                    <div class="btn_close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
                     <ul class="category-list">
                         <li class="category-item category-item-active">
                             <a href="" class="category-item__link">ÁO THUN</a>
@@ -69,9 +82,9 @@
                         </li>
                         <li class="category-item">
                             <a href="" class="category-item__link">ÁO THUN</a>
-                        </li>
+                        </li>                       
                     </ul>
-                </nav>
+                </label>
             </div>
             <div class="grid__column_3">
                 <div class="product_filter">

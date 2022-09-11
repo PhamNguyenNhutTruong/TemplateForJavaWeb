@@ -1,0 +1,104 @@
+    @media (min-width: 740px) and (max-width: 1023px) {
+    .grid {
+        width: 760px;
+    }
+
+    .grid__column {
+        width: 50%;
+    }
+    .header__navbar-item-search-input input {
+        width: 200px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product_info {
+        margin-top: 40px;
+    }
+
+    .product_info-name {
+        margin-bottom: 0px;
+        font-size: 2.8rem;
+        /* Xử lí tên quá dài */
+        line-height: 2.8rem;
+        max-height: 2.8rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 739px){
+    .grid {
+        width: 400px;
+    }
+
+    .grid__column {
+        width: 50%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+    
+    .header__navbar-item-search-input input {
+        width: 260px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product_info {
+        margin-top: 40px;
+    }
+
+    .product_info-name {
+        margin-bottom: 0px;
+        font-size: 2.2rem;
+        /* Xử lí tên quá dài */
+        line-height: 2.2rem;
+        max-height: 2.2rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+
+    .product_info-more {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .product_info-size-label,
+    .product_info-quantity-label,
+    .product_info-quantity-label {
+        font-size: 1.6rem;
+    }
+    
+    .product_info-size-general {
+        width: 37px;
+        height: 37px;
+        font-size: 1.4rem;
+    }
+
+    .btn_cart {
+        justify-content: space-around;
+        min-width: 120px;
+        height: 32px;
+    }
+    
+    .btn_cart ion-icon {
+        font-size: 2rem;
+        margin-left: 6px;
+    }
+}
