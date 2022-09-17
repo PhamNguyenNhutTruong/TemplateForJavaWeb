@@ -1,0 +1,97 @@
+@media (min-width: 740px) and (max-width: 1023px) {
+    .grid {
+        width: 760px;
+    }
+
+    .header__navbar-item-search-input input {
+        width: 200px;
+    }
+
+    .header__navbar-item {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .btn_container {
+        margin: 32px 0;
+    }
+    
+    .btn_cart {
+        min-width: 160px;
+        height: 36px;
+        color: var(--text);
+    }
+    
+    .btn_cart-lable {
+        font-size: 1.2rem;
+    }
+    
+    .btn_cart ion-icon {
+        font-size: 2rem;    
+    }
+}
+
+@media (max-width: 739px){
+    .grid {
+        width: 400px;
+    }
+
+    .grid__column {
+        width: 50%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .header__navbar-item-search-input input {
+        width: 260px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .group_content:first-child {
+        border-right: none;
+    }
+
+    .group_content,
+    .input__info_customer input,
+    .checkBill_policy-first,
+    .checkBill_policy-second,
+    .checkBill_policy-content,
+    .btn_container,
+    .group_content:last-child {
+        width: 100%;
+    }
+
+    .btn_container {
+        margin: 4px 0;
+    }
+    
+    .btn_cart {
+        margin: 16px 0;
+        min-width: 160px;
+        height: 24px;
+        color: var(--text);
+    }
+    
+    .btn_cart-lable {
+        font-size: 1rem;
+    }
+    
+    .btn_cart ion-icon {
+        font-size: 1.4rem;    
+    } 
+    .group_content:last-child {
+        margin-bottom: 16px;
+    }
+
+    .bill_info h3 {
+        color: var(--text-color);
+        font-size: 1.4rem;
+        opacity: 0.8;
+    }
+}
