@@ -108,6 +108,20 @@ html {
 /* Button  */
 .button_container {
     border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button_container input {
+    margin: 16px;
+    width: 500px;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding-left: 12px;
 }
 
 .button_container button {
@@ -118,10 +132,18 @@ html {
     border: 1px solid #000;
     font-size: 1.6rem;
     cursor: pointer;
+} 
+
+.managerment-info {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
 }
 
-.button_container .button-active {
-    background-color: #80BF80;
+.managerment-info h3 {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 /* Management */
