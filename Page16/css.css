@@ -1,0 +1,182 @@
+/* base css */
+:root {
+    --header-height: 120px;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+
+
+/* Content */
+/* Left content */
+.admin_options {
+    list-style: none;
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.admin_option_item {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0px;
+}
+
+/* Right Content */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:  0 40px;
+    height: 100vh;
+}
+.left_content {
+    border-right: 1px solid #8c8c8c;
+    padding-right: 100px;
+}
+
+.admin_option_item {
+    vertical-align: middle;
+}
+.admin_option_item ion-icon {
+    display: block;
+    margin-right: 16px;
+    font-size: 3rem;
+}
+
+.admin_option_item span {
+    position: relative;
+    top: 2px;
+}
+
+/* Right content */
+.right_content {
+    width: 100%;
+}
+.logout {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 50px;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user_info {
+    display: flex;
+    justify-content: row;
+    height: 100%;
+}
+
+.user_info .user_img {
+    border-radius: 50%;
+}
+
+.user_info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.logout_icon {
+    margin-left: 20px;
+}
+
+.logout_icon ion-icon {
+    display: block;
+    font-size: 2.8rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Button  */
+.button_container {
+    border-bottom: 1px solid #ddd;
+}
+
+.button_container button {
+    margin: 16px;
+    min-width: 200px;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.button_container .button-active {
+    background-color: #80BF80;
+}
+
+/* Management */
+.manager_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.manager_container h3 {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+/* Available Product */
+.group_product-to-manage:first-child table tr th {
+    font-weight: 500;
+}
+.group_product-to-manage {
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    margin-left: 16px;
+    margin-top: 24px;
+}
+
+table {
+    width: 100%;
+}
+
+table tr {
+    height: 36px; 
+}
+
+table tr th {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 50px;  
+}
+
+table tr th:not(:first-child)
+{
+    text-align: start;
+}
+
+table tr th a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.hide_element {
+    visibility: hidden;
+}
