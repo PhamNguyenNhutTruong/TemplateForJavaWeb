@@ -74,14 +74,24 @@ html {
     padding-left: 220px;
 }
 
+.fixed_content {
+    position: fixed;
+    top: 0;
+    left: 260px;
+    right: 0;
+    background-color: #fcfcfc;
+}
+
 .logout {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    height: 50px;
-    margin-top: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #ddd;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 40px;
 }
 
 .user_info {
@@ -116,6 +126,7 @@ html {
 /* Button  */
 .button_container {
     border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
 }
 
 .button_container button {
@@ -136,7 +147,7 @@ html {
 .customer_info {
     text-align: center;
     width: 1000px;
-    margin: 20px auto 0;
+    margin: 150px auto 0;
     padding-bottom: 36px;
 }
 
