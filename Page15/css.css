@@ -39,17 +39,24 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:  0 40px;
+    margin: 0 40px;
     height: 100vh;
 }
+
 .left_content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: 24px;
+    width: 260px;
     border-right: 1px solid #8c8c8c;
-    padding-right: 100px;
 }
 
 .admin_option_item {
     vertical-align: middle;
 }
+
 .admin_option_item ion-icon {
     display: block;
     margin-right: 16px;
@@ -64,7 +71,9 @@ html {
 /* Right content */
 .right_content {
     width: 100%;
+    padding-left: 220px;
 }
+
 .logout {
     display: flex;
     flex-direction: row;
@@ -120,7 +129,7 @@ html {
 }
 
 .button_container .button-active {
-    background-color: #80BF80;
+    background-color: #5ec9ff;
 }
 
 /*  Customer info*/
@@ -128,6 +137,7 @@ html {
     text-align: center;
     width: 1000px;
     margin: 20px auto 0;
+    padding-bottom: 36px;
 }
 
 .img img {
