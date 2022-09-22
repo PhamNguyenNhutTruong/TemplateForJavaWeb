@@ -158,6 +158,10 @@ html {
 }
 
 /* Available Product */
+.available_product {
+    margin-top: 200px;
+}
+
 .group_product-to-manage:first-child table tr th {
     font-weight: 500;
 }
