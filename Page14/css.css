@@ -72,14 +72,25 @@ html {
     padding-bottom: 36px;
     padding-left: 220px;
 }
+
+.fixed_content {
+    position: fixed;
+    top: 0;
+    left: 260px;
+    right: 0;
+    background-color: #fcfcfc;
+}
+
 .logout {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    height: 50px;
-    margin-top: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #ddd;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 40px;
 }
 
 .user_info {
@@ -113,10 +124,8 @@ html {
 
 /* Button  */
 .button_container {
+    border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .button_container input {
@@ -152,6 +161,10 @@ html {
     font-weight: 500;
 }
 
+.button_container .button-active {
+    background-color: #5ec9ff;
+}
+
 /* Management */
 .manager_container {
     display: flex;
@@ -165,7 +178,7 @@ html {
     color: var(--text-color);
     font-size: 1.6rem;
     font-weight: 500;
-    margin-left: 50px;
+    margin-right: 40px;
 }
 
 /* Available Product */
